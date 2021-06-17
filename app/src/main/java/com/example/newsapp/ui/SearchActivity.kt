@@ -30,7 +30,7 @@ class SearchActivity : AbstractActivity(), ViewHome.View {
 
     override fun onInject() {
 
-        val dataSource = NewsDataSource()
+        val dataSource = NewsDataSource(this)
         searchPresenter = SearchPresenter(this, dataSource)
         configRecycle()
         search()
