@@ -5,5 +5,7 @@ import com.example.newsapp.model.NewsResponse
 
 interface FavoritesHome {
 
-    fun showArticles(articles: List<Article>)
+    interface Presenter {
+        fun onSucess(articles: List<Article>)
+    }
 }
